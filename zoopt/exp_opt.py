@@ -47,8 +47,8 @@ class ExpOpt:
             # perform the optimization
             solution = Opt.min(objective, parameter)
             ret.append(solution)
-            ToolFunction.log('The best solution is:')
-            solution.print_solution()
+#             ToolFunction.log('The best solution is:')
+#             solution.print_solution()
             # store the optimization result
             result.append(solution.get_value())
 
