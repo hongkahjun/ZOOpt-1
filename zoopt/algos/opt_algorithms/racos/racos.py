@@ -78,7 +78,7 @@ class Racos(RacosCommon):
                 if expected_time > 5:
                     m, s = divmod(expected_time, 60)
                     h, m = divmod(m, 60)
-                    ToolFunction.log('expected remaining running time: %02d:%02d:%02d' % (h, m, s))
+#                    ToolFunction.log('expected remaining running time: %02d:%02d:%02d' % (h, m, s))
             # time budget check
             if self._parameter.get_time_budget() is not None:
                 if time.time() - time_log1 >= self._parameter.get_time_budget:
