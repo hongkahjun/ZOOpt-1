@@ -123,7 +123,7 @@ class RacosCommon:
                     self._data.append(sol)
         for i in range(0, eval_num):
             sol = evaluated_queue.get(block=True, timeout=None)
-            ToolFunction.log("init solution %s, value: %s" % (i, sol.get_value()))
+#            ToolFunction.log("init solution %s, value: %s" % (i, sol.get_value()))
             self._data.append(sol)
             sampled_data.append(sol)
         # otherwise generate random solutions
