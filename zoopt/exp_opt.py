@@ -79,8 +79,8 @@ class ExpOpt:
         top_k = results[0:limit]
         mean_r = np.mean(top_k, axis=0, dtype=np.float64)
         std_r = np.std(top_k, axis=0, dtype=np.float64)
-        if limit <= 1:
-            ToolFunction.log('Best %d result: %s +- %s' % (limit, mean_r, std_r))
-        else:
-            ToolFunction.log('Best %d results: %s +- %s' % (limit, mean_r, std_r))
+#        if limit <= 1:
+#            ToolFunction.log('Best %d result: %s +- %s' % (limit, mean_r, std_r))
+#        else:
+#            ToolFunction.log('Best %d results: %s +- %s' % (limit, mean_r, std_r))
         return mean_r, std_r
